@@ -2,7 +2,7 @@ import numpy as np
 
 pr = 10
 pi = 4
-pm = 1
+pm = 0.005
 
 
 def mutate(offspring, int_vars, l_bound, u_bound):
