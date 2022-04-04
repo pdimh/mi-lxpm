@@ -2,10 +2,10 @@ import numpy as np
 import utils
 
 lxconfig = utils.config.lx
-A = lxconfig.a
-BR = lxconfig.br
-BI = lxconfig.bi
-PC = lxconfig.pc
+a = lxconfig.a
+br = lxconfig.br
+bi = lxconfig.bi
+pc = lxconfig.pc
 
 
 def crossover(population, int_vars):
@@ -22,12 +22,12 @@ def crossover(population, int_vars):
 
         u = np.random.random(len(int_vars))
 
-        if np.random.random() <= PC:
+        if np.random.random() <= pc:
             for j, int_var in enumerate(int_vars):
-                b = BI if int_var else BR
+                b = bi if int_var else br
                 b = b if u[j] > 1/2 else -b
 
-                beta = A + b * np.log(u[j])
+                beta = a + b * np.log(u[j])
 
                 offspring[i, j] = off1[j] + beta * abs(off1[j] - off2[j])
                 offspring[i + 1, j] = off2[j] + beta * abs(off1[j] - off2[j])

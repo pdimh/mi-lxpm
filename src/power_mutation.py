@@ -1,8 +1,10 @@
 import numpy as np
+import utils
 
-pr = 10
-pi = 4
-pm = 0.005
+pmconfig = utils.config.pm
+pr = pmconfig.pr
+pi = pmconfig.pi
+pm = pmconfig.pm
 
 
 def mutate(offspring, int_vars, l_bound, u_bound):
