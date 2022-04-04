@@ -1,0 +1,11 @@
+{
+    "max_iterations": 1000,
+    "pop_factor": 10,
+    "elite_factor": 0.05,
+    "lx": {
+        "a": 0,
+        "br": 0.15,
+        "bi": 0.35,
+        "pc": 0.8
+    }
+}

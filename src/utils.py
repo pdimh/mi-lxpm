@@ -1,14 +1,19 @@
+import json
 import numpy as np
-import problems.problem1 as p1
+from types import SimpleNamespace
+
+with open('config.json') as jsfile:
+    config = json.load(
+        jsfile, object_hook=lambda i: SimpleNamespace(**i))
 
 
 def generate(n, int_vars, l_bound, u_bound):
     gen = []
 
-    for i in range(0, n):
+    for _ in range(0, n):
         x = np.zeros(len(int_vars))
         for j, int_var in enumerate(int_vars):
-            x[j] = np.random.randint(l_bound[j], u_bound[j]) if int_var else \
+            x[j] = np.random.randint(l_bound[j], u_bound[j] + 1) if int_var else \
                 l_bound[j] + (u_bound[j] - l_bound[j]) * np.random.rand()
         gen.append(x)
 
