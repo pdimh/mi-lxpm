@@ -34,4 +34,4 @@ def evaluate(population, evaluate, max=False):
     fitness = fworst + constraint
     fitness[feasible_idx] = score[feasible_idx]
 
-    return fitness
+    return fitness, feasible.size > 0
