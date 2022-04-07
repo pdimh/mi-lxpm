@@ -1,8 +1,9 @@
 {
-    "problem": "problem1",
-    "max_iterations": 4000,
-    "pop_factor": 50,
-    "elite_factor": 0.1,
+    "problem": "problem17",
+    "max_iterations": 1000,
+    "pop_factor": 10,
+    "elite_factor": 0.05,
+    "tolerance": 0.01,
     "lx": {
         "a": 0,
         "br": 0.15,
