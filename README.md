@@ -1,6 +1,6 @@
 # MI-LXPM
 
-This project implements the MI-LXPM[1] algorithm.
+This project implements the MI-LXPM [1] algorithm.
 
 ## Objective
 
@@ -16,7 +16,7 @@ All configuration is available through config.json. I have added configurations 
 
 ## Problems
 
-New problems can be added, see [problem1](problems/problem1.py) por an example.
+New problems can be added, see [problem1](src/problems/problem1.py) and [problem17](src/problems/problem17.py) for an example.
 
 ## References
 [1] Deep K., Pratap K., Singh P., Kansal M.L., Mohan C. (2009) A real coded genetic algorithm for solving integer and mixed integer
